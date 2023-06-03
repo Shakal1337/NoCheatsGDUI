@@ -1,0 +1,29 @@
+﻿<Window x:Class="NoCheatsGD_UI_.debug"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NoCheatsGD_UI_"
+        mc:Ignorable="d"
+        Title="debug" Height="450" Width="800">
+    <Grid>
+        <CheckBox x:Name="ActiveDubug" Content="Активировать Debug Mode навсегда" HorizontalAlignment="Left" Margin="10,333,0,0" VerticalAlignment="Top" FontSize="18" Cursor="No" Checked="ActiveDebugModeFull" Unchecked="DebugModeDiactived" IsChecked="False"/>
+        <TextBlock x:Name="wairnongdebug" HorizontalAlignment="Left" Margin="450,318,0,0" TextWrapping="Wrap" 
+                   Text="На данный момент Debug Mode 
+                   
+                   
+                   
+                   активкен только в этом сеансе" VerticalAlignment="Top" FontSize="20" Foreground="Red"/>
+        <TextBlock x:Name="activedubugmessage" HorizontalAlignment="Left" Margin="450,331,0,0" TextWrapping="Wrap" 
+            Text="Dubug Mode активирован" VerticalAlignment="Top" FontSize="20" Foreground="Red" Visibility="Hidden"/>
+        <Button Content="Просмотор всех настроек" HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top" FontSize="22" Click="AllSettingsView"/>
+        <Button Content="Reset all(не рекомендуется)" HorizontalAlignment="Left" Margin="10,24,0,0" VerticalAlignment="Top" FontSize="22" Click="ResetAll"/>
+        <Button Content="Открыть корневую папку" HorizontalAlignment="Left" Margin="10,179,0,0" VerticalAlignment="Top" FontSize="22" Click="OpenMainFloder"/>
+        <Button Content="Открыть папку с модами" HorizontalAlignment="Left" Margin="10,217,0,0" VerticalAlignment="Top" FontSize="22" Click="OpenModsFloder"/>
+        <Button Content="Сброс путей к папакам" HorizontalAlignment="Left" Margin="10,62,0,0" VerticalAlignment="Top" FontSize="22" Click="ResetPath"/>
+        <TextBlock HorizontalAlignment="Left" Margin="476,62,0,0" TextWrapping="Wrap" Text="НЕ РЕКОМНДУЕТСЯ ИСПОЛЬЗОВАТЬ ЭТО ОКНО ЕСЛИ ВЫ НЕ УВЕРЕННЫ В СВОИХ НАМЕРЕНЬЕХ ЭТО МОЖЕТ ПРИВЕСТИ К НЕСТАБИЛЬНОЙ РОБОТЕ ПРИЛОЖЕНИЯ " VerticalAlignment="Top" Width="246" FontSize="18" Foreground="Red" Background="Black"/>
+        <Button Content="Просмотор всех путей" HorizontalAlignment="Left" Margin="10,138,0,0" VerticalAlignment="Top" FontSize="22" Click="AllSettingsView_"/>
+
+    </Grid>
+</Window>
+ 

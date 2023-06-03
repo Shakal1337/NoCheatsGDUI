@@ -1,0 +1,39 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="NoCheatsGD_UI_" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="MainFloder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\ProgramData\NoCheatsGD-Alpha</Value>
+    </Setting>
+    <Setting Name="MainFloderResalutFloder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\ProgramData\NoCheatsGD-Alpha\res</Value>
+    </Setting>
+    <Setting Name="GDBotMoveSettings" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="GDHMMoveSettingsByPass" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="GDHMMoveSettingsPlayer" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="GDHMMoveSettingsGlobal" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="GDHMMoveSettingsCore" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="GDHMMoveSettingsCreator" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="GDHMMoveSettingsvVriables" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="FirstRun" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="DebugMode" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

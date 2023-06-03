@@ -1,0 +1,167 @@
+﻿<Window x:Name="SettingsWindow" x:Class="NoCheatsGD_UI_.FirstRun"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NoCheatsGD_UI_"
+        mc:Ignorable="d"
+        Title="Настройка" Height="500" Width="800" MaxHeight="500" MaxWidth="800" MinHeight="500" MinWidth="800">
+    <Grid x:Name="SettingsGird" Background="#FF100F0F">
+        <TextBlock HorizontalAlignment="Center"
+                   Margin="0,30,0,0" 
+                   TextWrapping="Wrap" 
+                   Text="Hello World !" 
+                   VerticalAlignment="Top" 
+                   FontSize="48" 
+                   FontFamily="Arial" 
+                   Foreground="White" MouseWheel="DebugActived"/>
+
+        <TextBlock HorizontalAlignment="Center" 
+                   Margin="0,90,0,0" 
+                   TextWrapping="Wrap" 
+                   Text="Для продолженя укажити пути до папки с основными модами и вашим ботом"
+                   VerticalAlignment="Top"
+                   Height="35" 
+                   FontSize="16" 
+                   FontWeight="Bold" 
+                   Foreground="#FFECECEC"/>
+
+        <Button Content="Бот"
+                HorizontalAlignment="Center"
+                Margin="0,138,0,0" 
+                VerticalAlignment="Top" 
+                Height="30"
+                Width="130"
+                Background="White">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+
+        <Button Content="ByPass"
+                HorizontalAlignment="Left" 
+                Margin="110,138,0,0"
+                VerticalAlignment="Top"
+                Height="30"
+                Width="130"
+                Background="White" Click="bypasspath">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+
+        <Button Content="Player"
+                HorizontalAlignment="Left"
+                Margin="110,180,0,0"
+                VerticalAlignment="Top"
+                Height="30"
+                Width="130"
+                Background="White" Click="playerpath">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="White" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+
+        <Button Content="Global"
+                HorizontalAlignment="Left" 
+                Margin="110,222,0,0" 
+                VerticalAlignment="Top" 
+                Height="30" 
+                Width="130" 
+                Background="White" Click="globalpath">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+
+        <Button Content="Core"
+                HorizontalAlignment="Left"
+                Margin="558,138,0,0" 
+                VerticalAlignment="Top"
+                Height="30" 
+                Width="130" 
+                Background="White" Click="corepath">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+
+        <Button Content="Creator" 
+                HorizontalAlignment="Left" 
+                Margin="558,180,0,0" 
+                VerticalAlignment="Top" 
+                Height="30"
+                Width="130" 
+                Background="White" Click="creatorpath">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+
+        <Button Content="Variables" 
+                HorizontalAlignment="Left" 
+                Margin="558,222,0,0" 
+                VerticalAlignment="Top" 
+                Height="30"
+                Width="130"
+                Background="White" Click="variablespath">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+
+        <Button Content="Сохронить" 
+                HorizontalAlignment="Center" 
+                Margin="0,180,0,0"
+                VerticalAlignment="Top" 
+                Height="30"
+                Width="160"
+                Background="White" Click="Save">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+
+        <Button Content="Бот" 
+                HorizontalAlignment="Center" 
+                Margin="0,138,0,0"
+                VerticalAlignment="Top" 
+                Height="30"
+                Width="130"
+                Background="White" Click="gdbotpath">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+
+        <Button Content="Сброс"
+                HorizontalAlignment="Center" 
+                Margin="0,222,0,0"
+                VerticalAlignment="Top"
+                Height="30" 
+                Width="130"
+                Background="White" Click="Reset">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+
+        <Button Content="Помощь"
+                HorizontalAlignment="Left" 
+                Margin="730,444,0,0" 
+                VerticalAlignment="Top"/>
+
+        <Button Content="Инфо" 
+                HorizontalAlignment="Left" 
+                Margin="21,444,0,0" 
+                VerticalAlignment="Top" 
+                Click="InfoShow"/>
+        <Button x:Name="DebugButton" 
+                Content="Debug" 
+                HorizontalAlignment="Center"
+                Margin="0,257,0,0" 
+                VerticalAlignment="Top"
+                RenderTransformOrigin="1.201,1.134" Click="DubugWindow"/>
+
+    </Grid>
+</Window>
