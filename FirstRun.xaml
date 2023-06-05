@@ -110,7 +110,7 @@
             </Button.BorderBrush>
         </Button>
 
-        <Button Content="Сохронить" 
+        <Button Content="Сохранить" 
                 HorizontalAlignment="Center" 
                 Margin="0,180,0,0"
                 VerticalAlignment="Top" 

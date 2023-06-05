@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,14 @@ namespace NoCheatsGD_UI_
     {
         public MainWindow()
         {
+            bool MainDirectorySearch = File.Exists(@"C:\ProgramData\InS\NoCheatsGD(UI)\result");
+            if (MainDirectorySearch == true) { }
+
+            else 
+            {
+                Directory.CreateDirectory(@"C:\ProgramData\InS\NoCheatsGD(UI)\result");
+            }
+
             if (Settings.Default.FirstRun == true)
             {
                FirstRun firstRun = new FirstRun();

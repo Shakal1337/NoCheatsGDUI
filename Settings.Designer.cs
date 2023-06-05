@@ -25,7 +25,7 @@ namespace NoCheatsGD_UI_ {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("C:\\ProgramData\\NoCheatsGD-Alpha")]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\ProgramData\\InS\\NoCheatsGD(UI)")]
         public string MainFloder {
             get {
                 return ((string)(this["MainFloder"]));
@@ -34,7 +34,7 @@ namespace NoCheatsGD_UI_ {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("C:\\ProgramData\\NoCheatsGD-Alpha\\res")]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\ProgramData\\InS\\NoCheatsGD(UI)\\result")]
         public string MainFloderResalutFloder {
             get {
                 return ((string)(this["MainFloderResalutFloder"]));

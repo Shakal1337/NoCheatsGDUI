@@ -3,10 +3,10 @@
   <Profiles />
   <Settings>
     <Setting Name="MainFloder" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">C:\ProgramData\NoCheatsGD-Alpha</Value>
+      <Value Profile="(Default)">C:\ProgramData\InS\NoCheatsGD(UI)</Value>
     </Setting>
     <Setting Name="MainFloderResalutFloder" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">C:\ProgramData\NoCheatsGD-Alpha\res</Value>
+      <Value Profile="(Default)">C:\ProgramData\InS\NoCheatsGD(UI)\result</Value>
     </Setting>
     <Setting Name="GDBotMoveSettings" Type="System.String" Scope="User">
       <Value Profile="(Default)" />

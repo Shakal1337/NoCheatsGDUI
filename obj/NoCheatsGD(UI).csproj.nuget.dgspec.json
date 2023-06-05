@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\1337\\source\\repos\\NoCheatsGD(UI)\\NoCheatsGD(UI).csproj": {}
+    "C:\\Users\\vsevolodnegodyaev\\Desktop\\NoCheatsGD(UI)\\NoCheatsGD(UI).csproj": {}
   },
   "projects": {
-    "C:\\Users\\1337\\source\\repos\\NoCheatsGD(UI)\\NoCheatsGD(UI).csproj": {
+    "C:\\Users\\vsevolodnegodyaev\\Desktop\\NoCheatsGD(UI)\\NoCheatsGD(UI).csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\1337\\source\\repos\\NoCheatsGD(UI)\\NoCheatsGD(UI).csproj",
+        "projectUniqueName": "C:\\Users\\vsevolodnegodyaev\\Desktop\\NoCheatsGD(UI)\\NoCheatsGD(UI).csproj",
         "projectName": "NoCheatsGD(UI)",
-        "projectPath": "C:\\Users\\1337\\source\\repos\\NoCheatsGD(UI)\\NoCheatsGD(UI).csproj",
-        "packagesPath": "C:\\Users\\1337\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\1337\\source\\repos\\NoCheatsGD(UI)\\obj\\",
+        "projectPath": "C:\\Users\\vsevolodnegodyaev\\Desktop\\NoCheatsGD(UI)\\NoCheatsGD(UI).csproj",
+        "packagesPath": "C:\\Users\\vsevolodnegodyaev\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vsevolodnegodyaev\\Desktop\\NoCheatsGD(UI)\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\VS2019\\SDK\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\1337\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vsevolodnegodyaev\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

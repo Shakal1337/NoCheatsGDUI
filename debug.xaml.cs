@@ -92,12 +92,12 @@ namespace NoCheatsGD_UI_
 
         private void OpenMainFloder(object sender, RoutedEventArgs e)
         {
-            Process.Start("explorer.exe", @"C:\Users\1337\Desktop\dev");
+            Process.Start("explorer.exe", @"C:\ProgramData\InS\NoCheatsGD(UI)");
         }
 
         private void OpenModsFloder(object sender, RoutedEventArgs e)
         {
-            Process.Start("explorer.exe", @"C:\Users\1337\Desktop\dev");
+            Process.Start("explorer.exe", @"C:\ProgramData\InS\NoCheatsGD(UI)\result");
         }
 
         private void ResetAll(object sender, RoutedEventArgs e)
