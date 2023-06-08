@@ -24,22 +24,31 @@ namespace NoCheatsGD_UI_
         public MainWindow()
         {
             bool MainDirectorySearch = File.Exists(@"C:\ProgramData\InS\NoCheatsGD(UI)\result");
+            InitializeComponent();
             if (MainDirectorySearch == true) { }
-
-            else 
+            else
             {
                 Directory.CreateDirectory(@"C:\ProgramData\InS\NoCheatsGD(UI)\result");
             }
 
-            if (Settings.Default.FirstRun == true)
-            {
-               FirstRun firstRun = new FirstRun();
-                firstRun.Show();
-            }
-            else
-            {
-                InitializeComponent();
-            }
+            //if (Settings.Default.FirstRun == true)
+            //{
+            //    FirstRun firstRun = new FirstRun();
+            //    firstRun.Show();
+            //}
+            //else
+            //{
+            //    InitializeComponent();
+            //}
+
+
         }
+
+
+        private void backlightoff_MouseEnter (object sender, MouseEventArgs e)
+        {
+            ((Button)sender).IsHitTestVisible = false;
+        }
+
     }
 }

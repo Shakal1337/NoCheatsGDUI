@@ -50,3 +50,5 @@ C:\Users\vsevolodnegodyaev\Desktop\NoCheatsGD(UI)\obj\Debug\net7.0-windows\refin
 C:\Users\vsevolodnegodyaev\Desktop\NoCheatsGD(UI)\obj\Debug\net7.0-windows\NoCheatsGD(UI).pdb
 C:\Users\vsevolodnegodyaev\Desktop\NoCheatsGD(UI)\obj\Debug\net7.0-windows\NoCheatsGD(UI).genruntimeconfig.cache
 C:\Users\vsevolodnegodyaev\Desktop\NoCheatsGD(UI)\obj\Debug\net7.0-windows\ref\NoCheatsGD(UI).dll
+C:\Users\vsevolodnegodyaev\Desktop\NoCheatsGD(UI)\bin\Debug\net7.0-windows\Microsoft.Xaml.Behaviors.dll
+C:\Users\vsevolodnegodyaev\Desktop\NoCheatsGD(UI)\obj\Debug\net7.0-windows\NoCheatsGD(UI).csproj.CopyComplete

@@ -2,11 +2,48 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net7.0-windows</TargetFramework>
+    <TargetFramework>net7.0-windows7.0</TargetFramework>
     <RootNamespace>NoCheatsGD_UI_</RootNamespace>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Assets\**" />
+    <EmbeddedResource Remove="Assets\**" />
+    <None Remove="Assets\**" />
+    <Page Remove="Assets\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="back.png" />
+    <None Remove="buttonback.png" />
+    <None Remove="gdhm on button.png" />
+    <None Remove="github-mark.png" />
+    <None Remove="IMG_2881.JPG" />
+    <None Remove="info-button.png" />
+    <None Remove="Resources\back.png" />
+    <None Remove="Resources\bottom.png" />
+    <None Remove="Resources\button gdbot off.png" />
+    <None Remove="Resources\button gdbot on.png" />
+    <None Remove="Resources\check.png" />
+    <None Remove="Resources\cross.png" />
+    <None Remove="Resources\gdhm off button.png" />
+    <None Remove="Resources\gdhm on button.png" />
+    <None Remove="Resources\github-mark.png" />
+    <None Remove="Resources\github-mark.svg" />
+    <None Remove="Resources\Help.png" />
+    <None Remove="Resources\info-button.png" />
+    <None Remove="Resources\info-button.svg" />
+    <None Remove="Resources\othetbutt.png" />
+    <None Remove="Resources\Setting-Icon.png" />
+    <None Remove="Resources\Setting-Icon.svg" />
+    <None Remove="Setting-Icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.39" />
+  </ItemGroup>
 
   <ItemGroup>
     <Compile Update="Settings.Designer.cs">
@@ -21,6 +58,52 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="gdhm on button.png" />
+    <Resource Include="github-mark.png" />
+    <Resource Include="info-button.png" />
+    <Resource Include="Resources\back.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\bottom.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\button gdbot off.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\button gdbot on.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\check.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\cross.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\gdhm off button.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\gdhm on button.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\github-mark.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Help.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\info-button.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\othetbutt.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Setting-Icon.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Setting-Icon.png" />
   </ItemGroup>
 
 </Project>

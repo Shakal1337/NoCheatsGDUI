@@ -77,7 +77,7 @@ namespace NoCheatsGD_UI_ {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/NoCheatsGD(UI);component/debug.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/NoCheatsGD(UI);V1.0.0.0;component/debug.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\debug.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
