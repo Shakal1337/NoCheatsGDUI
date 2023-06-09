@@ -59,11 +59,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vsevolodnegodyaev\\source\\repos\\NoCheatsGD(UI)\\NoCheatsGD(UI).csproj",
+      "projectUniqueName": "C:\\Users\\vsevolodnegodyaev\\Desktop\\NoCheatsGD(UI)\\NoCheatsGD(UI).csproj",
       "projectName": "NoCheatsGD(UI)",
-      "projectPath": "C:\\Users\\vsevolodnegodyaev\\source\\repos\\NoCheatsGD(UI)\\NoCheatsGD(UI).csproj",
+      "projectPath": "C:\\Users\\vsevolodnegodyaev\\Desktop\\NoCheatsGD(UI)\\NoCheatsGD(UI).csproj",
       "packagesPath": "C:\\Users\\vsevolodnegodyaev\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vsevolodnegodyaev\\source\\repos\\NoCheatsGD(UI)\\obj\\",
+      "outputPath": "C:\\Users\\vsevolodnegodyaev\\Desktop\\NoCheatsGD(UI)\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

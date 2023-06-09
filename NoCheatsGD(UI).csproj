@@ -28,6 +28,8 @@
     <None Remove="Resources\button gdbot on.png" />
     <None Remove="Resources\check.png" />
     <None Remove="Resources\cross.png" />
+    <None Remove="Resources\crossred.png" />
+    <None Remove="Resources\crosswhite.png" />
     <None Remove="Resources\gdhm off button.png" />
     <None Remove="Resources\gdhm on button.png" />
     <None Remove="Resources\github-mark.png" />
@@ -80,6 +82,12 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\cross.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\crossred.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\crosswhite.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\gdhm off button.png">

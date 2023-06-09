@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rIyl9wfGYwJT7dj1dWnU2ESd8ZEzB6BRiJjB/sMeAwXPuo7GpAn6vgwyO/R800tf8vxbJSArQZn7uiWrMsfUVQ==",
+  "dgSpecHash": "I+0+R3hxXAcJv18I2ZyIdrKg1tLBgp+2mVX7XOSNfrsrqn6k90oyxSXXUwFTJ6SU3E9i7ipsvmSdjg4wSx710g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vsevolodnegodyaev\\source\\repos\\NoCheatsGD(UI)\\NoCheatsGD(UI).csproj",
+  "projectFilePath": "C:\\Users\\vsevolodnegodyaev\\Desktop\\NoCheatsGD(UI)\\NoCheatsGD(UI).csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vsevolodnegodyaev\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
   ],
