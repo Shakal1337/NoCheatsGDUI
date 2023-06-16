@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Security.Policy;
 
 namespace NoCheatsGD_UI_
 {
@@ -47,8 +48,29 @@ namespace NoCheatsGD_UI_
 
         private void backlightoff_MouseEnter (object sender, MouseEventArgs e)
         {
-            ((Button)sender).IsHitTestVisible = false;
+
         }
 
+        private void gdbotoffon(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("tlt");
+        }
+
+        private void close(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void crossred(object sender, MouseEventArgs e)
+        {
+            closered.Visibility = Visibility.Visible;
+            closewhite.Opacity = 0;
+        }
+
+        private void closewhitee(object sender, MouseEventArgs e)
+        {
+            closered.Visibility = Visibility.Hidden;
+            closewhite.Opacity = 100;
+        }
     }
 }

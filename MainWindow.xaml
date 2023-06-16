@@ -18,59 +18,465 @@
         </Grid.Background>
 
         <Label x:Name="welcome" Content="Welcome" HorizontalAlignment="Center" Height="80" VerticalAlignment="Top" Width="290" FontSize="60" FontFamily="Coconut" Foreground="White" Margin="0,30,0,0" Background="{x:Null}"/>
+
         <Label x:Name="txt1" Content="выберите какой компонент вы собираетесь отключить" HorizontalAlignment="Center" Height="39" Margin="0,97,0,0" VerticalAlignment="Top" Width="778" FontSize="25" FontFamily="Coconut" Foreground="White" Background="{x:Null}"/>
+
         <Image x:Name="check" HorizontalAlignment="Center" Height="25" Margin="0,143,0,0" VerticalAlignment="Top" Width="216" Source="/Resources/check.png"/>
+
         <Image x:Name="uncheked" HorizontalAlignment="Center" Height="25" Margin="0,143,0,0" VerticalAlignment="Top" Width="335" Source="/Resources/cross.png" Visibility="Hidden"/>
-        <Button x:Name="gdbotoff" Content="" HorizontalAlignment="Center" Height="100" Margin="0,176,0,0" VerticalAlignment="Top" Width="416" BorderBrush="{x:Null}" Foreground="{x:Null}" BorderThickness="1" MouseEnter="backlightoff_MouseEnter">
+
+        <Button x:Name="gdbotoff"
+                Content="" 
+                HorizontalAlignment="Center"
+                Height="100" 
+                Margin="0,176,0,0" 
+                VerticalAlignment="Top"
+                Width="416" 
+                BorderBrush="{x:Null}" 
+                Foreground="{x:Null}" 
+                BorderThickness="1" 
+                Click="gdbotoffon">
             <Button.Background>
-                <ImageBrush ImageSource="/Resources/button gdbot off.png"/>
+                <ImageBrush x:Name="im" ImageSource="/Resources/button gdbot off.png"/>
             </Button.Background>
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}">
+                                    <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background">
+                                            <Setter.Value>
+                                                <ImageBrush/>
+                                            </Setter.Value>
+                                        </Setter>
+                                        <Setter Property="Foreground" Value="Black"/>
+                                        <Setter Property="BorderBrush" Value="Transparent"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
         </Button>
-        <Button x:Name="gdboton" Content="" HorizontalAlignment="Center" Height="100" Margin="0,176,0,0" VerticalAlignment="Top" Width="416" BorderBrush="{x:Null}" Foreground="{x:Null}" BorderThickness="1" MouseEnter="backlightoff_MouseEnter" Visibility="Hidden">
+
+        <Button x:Name="gdboton" 
+                Content="" 
+                HorizontalAlignment="Center" 
+                Height="100"
+                Margin="0,176,0,0" 
+                VerticalAlignment="Top" 
+                Width="416" BorderBrush="{x:Null}" 
+                Foreground="{x:Null}"
+                BorderThickness="1"
+                Visibility="Hidden">
             <Button.Background>
                 <ImageBrush ImageSource="/Resources/button gdbot on.png"/>
             </Button.Background>
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}">
+                                    <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background">
+                                            <Setter.Value>
+                                                <ImageBrush/>
+                                            </Setter.Value>
+                                        </Setter>
+                                        <Setter Property="Foreground" Value="Black"/>
+                                        <Setter Property="BorderBrush" Value="Transparent"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
         </Button>
-        <Button x:Name="gdhmoff" Content="" HorizontalAlignment="Left" Height="100" Margin="272,296,0,0" VerticalAlignment="Top" Width="328" BorderBrush="{x:Null}" Foreground="{x:Null}" BorderThickness="1" MouseEnter="backlightoff_MouseEnter">
+
+        <Button x:Name="gdhmoff" 
+                Content=""
+                HorizontalAlignment="Left" 
+                Height="100" 
+                Margin="272,296,0,0"
+                VerticalAlignment="Top" 
+                Width="328" 
+                BorderBrush="{x:Null}" 
+                Foreground="{x:Null}" 
+                BorderThickness="1" >
             <Button.Background>
                 <ImageBrush ImageSource="/Resources/gdhm off button.png"/>
             </Button.Background>
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}">
+                                    <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background">
+                                            <Setter.Value>
+                                                <ImageBrush/>
+                                            </Setter.Value>
+                                        </Setter>
+                                        <Setter Property="Foreground" Value="Black"/>
+                                        <Setter Property="BorderBrush" Value="Transparent"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
         </Button>
-        <Button x:Name="gdhmon" Content="" HorizontalAlignment="Left" Height="100" Margin="272,296,0,0" VerticalAlignment="Top" Width="328" BorderBrush="{x:Null}" Foreground="{x:Null}" BorderThickness="1" MouseEnter="backlightoff_MouseEnter" Visibility="Hidden">
+
+        <Button x:Name="gdhmon" 
+                Content="" 
+                HorizontalAlignment="Left" 
+                Height="100" 
+                Margin="272,296,0,0" 
+                VerticalAlignment="Top" 
+                Width="328" 
+                BorderBrush="{x:Null}"
+                Foreground="{x:Null}" 
+                BorderThickness="1"
+                Visibility="Hidden">
             <Button.Background>
                 <ImageBrush ImageSource="/gdhm on button.png"/>
             </Button.Background>
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}">
+                                    <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background">
+                                            <Setter.Value>
+                                                <ImageBrush/>
+                                            </Setter.Value>
+                                        </Setter>
+                                        <Setter Property="Foreground" Value="Black"/>
+                                        <Setter Property="BorderBrush" Value="Transparent"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
         </Button>
-        <Button x:Name="other" Content="" HorizontalAlignment="Left" Height="95" Margin="593,296,0,0" VerticalAlignment="Top" Width="95" Foreground="{x:Null}" BorderBrush="{x:Null}" MouseEnter="backlightoff_MouseEnter">
+
+        <Button x:Name="other"
+                Content="" 
+                HorizontalAlignment="Left" 
+                Height="95"
+                Margin="593,296,0,0" 
+                VerticalAlignment="Top" 
+                Width="95" 
+                Foreground="{x:Null}" 
+                BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/Resources/othetbutt.png"/>
             </Button.Background>
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}">
+                                    <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background">
+                                            <Setter.Value>
+                                                <ImageBrush/>
+                                            </Setter.Value>
+                                        </Setter>
+                                        <Setter Property="Foreground" Value="Black"/>
+                                        <Setter Property="BorderBrush" Value="Transparent"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
         </Button>
-        <Button x:Name="helpbutt" Content="Help/Помощь" HorizontalAlignment="Center" Height="27" Margin="0,384,0,0" VerticalAlignment="Top" Width="147" FontSize="20" BorderBrush="{x:Null}" FontFamily="Coconut" Foreground="White" MouseEnter="backlightoff_MouseEnter" Background="{x:Null}"/>
-        <Button x:Name="info" HorizontalAlignment="Left" Height="72" Margin="373,439,0,0" VerticalAlignment="Top" Width="72" Foreground="{x:Null}" BorderBrush="{x:Null}" MouseEnter="backlightoff_MouseEnter">
+
+        <Button x:Name="helpbutt"
+                Content="Help/Помощь" 
+                HorizontalAlignment="Center"
+                Height="27" Margin="0,384,0,0" 
+                VerticalAlignment="Top" 
+                Width="147"
+                FontSize="20" 
+                BorderBrush="{x:Null}" 
+                FontFamily="Coconut" 
+                Foreground="White" 
+                Background="{x:Null}">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}">
+                                    <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background">
+                                            <Setter.Value>
+                                                <ImageBrush/>
+                                            </Setter.Value>
+                                        </Setter>
+                                        <Setter Property="Foreground" Value="Black"/>
+                                        <Setter Property="BorderBrush" Value="Transparent"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
+        </Button>
+
+
+        <Button x:Name="info"
+                    HorizontalAlignment="Left" 
+                    Height="72" 
+                    Margin="373,439,0,0" 
+                    VerticalAlignment="Top" 
+                    Width="72"
+                    Foreground="{x:Null}" 
+                    BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/info-button.png"/>
             </Button.Background>
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}">
+                                    <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background">
+                                            <Setter.Value>
+                                                <ImageBrush/>
+                                            </Setter.Value>
+                                        </Setter>
+                                        <Setter Property="Foreground" Value="Black"/>
+                                        <Setter Property="BorderBrush" Value="Transparent"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
         </Button>
-        <Button x:Name="github" HorizontalAlignment="Left" Height="72" Margin="446,439,0,0" VerticalAlignment="Top" Width="72" Foreground="{x:Null}" BorderBrush="{x:Null}" MouseEnter="backlightoff_MouseEnter">
+
+        <Button x:Name="github"
+                HorizontalAlignment="Left" 
+                Height="72" 
+                Margin="446,439,0,0" 
+                VerticalAlignment="Top" 
+                Width="72"
+                Foreground="{x:Null}"
+                BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/github-mark.png"/>
             </Button.Background>
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}">
+                                    <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background">
+                                            <Setter.Value>
+                                                <ImageBrush/>
+                                            </Setter.Value>
+                                        </Setter>
+                                        <Setter Property="Foreground" Value="Black"/>
+                                        <Setter Property="BorderBrush" Value="Transparent"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
         </Button>
-        <Button x:Name="settings" HorizontalAlignment="Left" Height="72" Margin="519,439,0,0" VerticalAlignment="Top" Width="72" Foreground="{x:Null}" BorderBrush="{x:Null}" MouseEnter="backlightoff_MouseEnter">
+
+        <Button x:Name="settings" 
+                HorizontalAlignment="Left"
+                Height="72" 
+                Margin="519,439,0,0"
+                VerticalAlignment="Top"
+                Width="72"
+                Foreground="{x:Null}"
+                BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/Setting-Icon.png"/>
             </Button.Background>
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}">
+                                    <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background">
+                                            <Setter.Value>
+                                                <ImageBrush/>
+                                            </Setter.Value>
+                                        </Setter>
+                                        <Setter Property="Foreground" Value="Black"/>
+                                        <Setter Property="BorderBrush" Value="Transparent"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
         </Button>
-        <Button x:Name="closewhite" Content="Button" HorizontalAlignment="Left" Height="50" Margin="900,10,0,0" VerticalAlignment="Top" Width="50" BorderBrush="{x:Null}" Foreground="{x:Null}">
+        <Button x:Name="closered"
+                Content="Button"
+                HorizontalAlignment="Left" 
+                Height="50"
+                Margin="900,10,0,0"
+                VerticalAlignment="Top" 
+                Width="50" 
+                BorderBrush="{x:Null}" 
+                Foreground="{x:Null}" 
+                Visibility="Hidden" >
+            <Button.Background>
+                <ImageBrush ImageSource="/Resources/crossred.png"/>
+            </Button.Background>
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}">
+                                    <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background">
+                                            <Setter.Value>
+                                                <ImageBrush/>
+                                            </Setter.Value>
+                                        </Setter>
+                                        <Setter Property="Foreground" Value="Black"/>
+                                        <Setter Property="BorderBrush" Value="Transparent"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
+        </Button>
+
+        <Button x:Name="closewhite" 
+                Content="Button"
+                HorizontalAlignment="Left"
+                Height="50" 
+                Margin="900,10,0,0" 
+                VerticalAlignment="Top"
+                Width="50" 
+                BorderBrush="{x:Null}" 
+                Foreground="{x:Null}" Click="close" MouseEnter="crossred" MouseLeave="closewhitee">
             <Button.Background>
                 <ImageBrush ImageSource="/Resources/crosswhite.png"/>
             </Button.Background>
-        </Button>
-        <Button x:Name="closered" Content="Button" HorizontalAlignment="Left" Height="50" Margin="900,10,0,0" VerticalAlignment="Top" Width="50" BorderBrush="{x:Null}" Foreground="{x:Null}" Visibility="Hidden">
-            <Button.Background>
-                <ImageBrush ImageSource="/Resources/crosswhite.png"/>
-            </Button.Background>
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}">
+                                    <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background">
+                                            <Setter.Value>
+                                                <ImageBrush/>
+                                            </Setter.Value>
+                                        </Setter>
+                                        <Setter Property="Foreground" Value="Black"/>
+                                        <Setter Property="BorderBrush" Value="Transparent"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
         </Button>
 
     </Grid>

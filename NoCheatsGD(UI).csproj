@@ -63,7 +63,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="gdhm on button.png" />
+    <Resource Include="gdhm on button.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="github-mark.png" />
     <Resource Include="info-button.png" />
     <Resource Include="Resources\back.png">
