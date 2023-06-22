@@ -144,7 +144,7 @@
                 BorderBrush="{x:Null}" 
                 Foreground="{x:Null}" 
                 BorderThickness="1" 
-                Click="gdbotoffon">
+                Click="gdbotoffon" MouseEnter="gdbotonEnter">
             <Button.Background>
                 <ImageBrush x:Name="im" ImageSource="/Resources/button gdbot off.png"/>
             </Button.Background>
@@ -515,7 +515,7 @@
                 Width="50" 
                 BorderBrush="{x:Null}" 
                 Foreground="{x:Null}" 
-                Visibility="Hidden" >
+                Opacity="0" MouseLeave="crossredLeave">
             <Button.Background>
                 <ImageBrush ImageSource="/Resources/crossred.png"/>
             </Button.Background>
@@ -556,7 +556,7 @@
                 VerticalAlignment="Top"
                 Width="50" 
                 BorderBrush="{x:Null}" 
-                Foreground="{x:Null}" Click="close" MouseEnter="crossred" MouseLeave="closewhitee">
+                Foreground="{x:Null}" Click="close" MouseEnter="crosswhiteEnter">
             <Button.Background>
                 <ImageBrush ImageSource="/Resources/crosswhite.png"/>
             </Button.Background>

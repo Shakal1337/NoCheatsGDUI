@@ -61,16 +61,22 @@ namespace NoCheatsGD_UI_
             this.Close();
         }
 
-        private void crossred(object sender, MouseEventArgs e)
+        private void crosswhiteEnter(object sender, MouseEventArgs e)
         {
-            closered.Visibility = Visibility.Visible;
             closewhite.Opacity = 0;
+            closered.Opacity = 100;
         }
 
-        private void closewhitee(object sender, MouseEventArgs e)
+        private void crossredLeave(object sender, MouseEventArgs e)
         {
-            closered.Visibility = Visibility.Hidden;
             closewhite.Opacity = 100;
+            closered.Opacity = 0;
+        }
+
+        private void gdbotonEnter(object sender, MouseEventArgs e)
+        {
+            gdbotoff.Opacity = 0;
+            gdboton.Visibility = Visibility.Visible;
         }
     }
 }

@@ -148,17 +148,5 @@ namespace NoCheatsGD_UI_ {
                 this["DebugMode"] = value;
             }
         }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Resources\\button gdbot on.png")]
-        public string resorcimage {
-            get {
-                return ((string)(this["resorcimage"]));
-            }
-            set {
-                this["resorcimage"] = value;
-            }
-        }
     }
 }
