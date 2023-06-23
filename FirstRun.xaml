@@ -136,7 +136,7 @@
 
         <Button Content="Сброс"
                 HorizontalAlignment="Center" 
-                Margin="0,222,0,0"
+                Margin="0,263,0,0"
                 VerticalAlignment="Top"
                 Height="30" 
                 Width="130"
@@ -156,12 +156,25 @@
                 Margin="21,444,0,0" 
                 VerticalAlignment="Top" 
                 Click="InfoShow"/>
+        
         <Button x:Name="DebugButton" 
                 Content="Debug" 
                 HorizontalAlignment="Center"
-                Margin="0,257,0,0" 
+                Margin="0,298,0,0" 
                 VerticalAlignment="Top"
                 RenderTransformOrigin="1.201,1.134" Click="DubugWindow"/>
+        
+        <Button x:Name="gdbotname" Content=" Имя бота" 
+            HorizontalAlignment="Center" 
+            Margin="0,222,0,0"
+            VerticalAlignment="Top" 
+            Height="30"
+            Width="130"
+            Background="White" Click="gdbotname_Click">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
 
     </Grid>
 </Window>

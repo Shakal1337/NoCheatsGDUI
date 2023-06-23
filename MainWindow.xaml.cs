@@ -22,39 +22,43 @@ namespace NoCheatsGD_UI_
     /// </summary>
     public partial class MainWindow : Window
     {
+        string MainFloder = Settings.Default.MainFloder;
         public MainWindow()
         {
             bool MainDirectorySearch = File.Exists(@"C:\ProgramData\InS\NoCheatsGD(UI)\result");
-            InitializeComponent();
+            
+            //InitializeComponent();
             if (MainDirectorySearch == true) { }
             else
             {
                 Directory.CreateDirectory(@"C:\ProgramData\InS\NoCheatsGD(UI)\result");
             }
 
-            //if (Settings.Default.FirstRun == true)
-            //{
-            //    FirstRun firstRun = new FirstRun();
-            //    firstRun.Show();
-            //}
-            //else
-            //{
-            //    InitializeComponent();
-            //}
+            if (Settings.Default.FirstRun == true)
+            {
+                FirstRun firstRun = new FirstRun();
+                firstRun.Show();
+            }
+            else
+            {
+                InitializeComponent();
+            }
 
-
-        }
-
-
-        private void backlightoff_MouseEnter (object sender, MouseEventArgs e)
-        {
 
         }
 
         private void gdbotoffon(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("tlt");
+            File.Move(Settings.Default.GDBotMoveSettings, MainFloder );
         }
+
+
+
+
+
+
+
+
 
         private void close(object sender, RoutedEventArgs e)
         {
@@ -73,10 +77,10 @@ namespace NoCheatsGD_UI_
             closered.Opacity = 0;
         }
 
-        private void gdbotonEnter(object sender, MouseEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            gdbotoff.Opacity = 0;
-            gdboton.Visibility = Visibility.Visible;
+            Settings.Default.FirstRun = true;
+            Settings.Default.Save();
         }
     }
 }

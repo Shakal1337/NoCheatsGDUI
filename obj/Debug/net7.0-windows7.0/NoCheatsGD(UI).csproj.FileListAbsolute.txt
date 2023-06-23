@@ -110,3 +110,31 @@ C:\Users\vsevolodnegodyaev\Desktop\NoCheatsGDUI\obj\Debug\net7.0-windows7.0\refi
 C:\Users\vsevolodnegodyaev\Desktop\NoCheatsGDUI\obj\Debug\net7.0-windows7.0\NoCheatsGD(UI).pdb
 C:\Users\vsevolodnegodyaev\Desktop\NoCheatsGDUI\obj\Debug\net7.0-windows7.0\NoCheatsGD(UI).genruntimeconfig.cache
 C:\Users\vsevolodnegodyaev\Desktop\NoCheatsGDUI\obj\Debug\net7.0-windows7.0\ref\NoCheatsGD(UI).dll
+C:\Users\sevan\OneDrive\Рабочий стол\NoCheatsGDUI\obj\Debug\net7.0-windows7.0\NoCheatsGD(UI).csproj.AssemblyReference.cache
+C:\Users\sevan\OneDrive\Рабочий стол\NoCheatsGDUI\obj\Debug\net7.0-windows7.0\debug.g.cs
+C:\Users\sevan\OneDrive\Рабочий стол\NoCheatsGDUI\obj\Debug\net7.0-windows7.0\FirstRun.g.cs
+C:\Users\sevan\OneDrive\Рабочий стол\NoCheatsGDUI\obj\Debug\net7.0-windows7.0\MainWindow.g.cs
+C:\Users\sevan\OneDrive\Рабочий стол\NoCheatsGDUI\obj\Debug\net7.0-windows7.0\App.g.cs
+C:\Users\sevan\OneDrive\Рабочий стол\NoCheatsGDUI\obj\Debug\net7.0-windows7.0\NoCheatsGD(UI)_MarkupCompile.cache
+C:\Users\sevan\OneDrive\Рабочий стол\NoCheatsGDUI\obj\Debug\net7.0-windows7.0\NoCheatsGD(UI)_MarkupCompile.lref
+C:\Users\sevan\OneDrive\Рабочий стол\NoCheatsGDUI\obj\Debug\net7.0-windows7.0\NoCheatsGD(UI).dll
+C:\Users\sevan\OneDrive\Рабочий стол\NoCheatsGDUI\obj\Debug\net7.0-windows7.0\refint\NoCheatsGD(UI).dll
+C:\Users\sevan\OneDrive\Рабочий стол\NoCheatsGDUI\obj\Debug\net7.0-windows7.0\NoCheatsGD(UI).pdb
+C:\Users\sevan\OneDrive\Рабочий стол\NoCheatsGDUI\bin\Debug\net7.0-windows7.0\NoCheatsGD(UI).exe
+C:\Users\sevan\OneDrive\Рабочий стол\NoCheatsGDUI\bin\Debug\net7.0-windows7.0\NoCheatsGD(UI).dll.config
+C:\Users\sevan\OneDrive\Рабочий стол\NoCheatsGDUI\bin\Debug\net7.0-windows7.0\NoCheatsGD(UI).deps.json
+C:\Users\sevan\OneDrive\Рабочий стол\NoCheatsGDUI\bin\Debug\net7.0-windows7.0\NoCheatsGD(UI).runtimeconfig.json
+C:\Users\sevan\OneDrive\Рабочий стол\NoCheatsGDUI\bin\Debug\net7.0-windows7.0\NoCheatsGD(UI).dll
+C:\Users\sevan\OneDrive\Рабочий стол\NoCheatsGDUI\bin\Debug\net7.0-windows7.0\NoCheatsGD(UI).pdb
+C:\Users\sevan\OneDrive\Рабочий стол\NoCheatsGDUI\bin\Debug\net7.0-windows7.0\Microsoft.Xaml.Behaviors.dll
+C:\Users\sevan\OneDrive\Рабочий стол\NoCheatsGDUI\obj\Debug\net7.0-windows7.0\debug.baml
+C:\Users\sevan\OneDrive\Рабочий стол\NoCheatsGDUI\obj\Debug\net7.0-windows7.0\FirstRun.baml
+C:\Users\sevan\OneDrive\Рабочий стол\NoCheatsGDUI\obj\Debug\net7.0-windows7.0\MainWindow.baml
+C:\Users\sevan\OneDrive\Рабочий стол\NoCheatsGDUI\obj\Debug\net7.0-windows7.0\NoCheatsGD(UI).g.resources
+C:\Users\sevan\OneDrive\Рабочий стол\NoCheatsGDUI\obj\Debug\net7.0-windows7.0\NoCheatsGD(UI).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sevan\OneDrive\Рабочий стол\NoCheatsGDUI\obj\Debug\net7.0-windows7.0\NoCheatsGD(UI).AssemblyInfoInputs.cache
+C:\Users\sevan\OneDrive\Рабочий стол\NoCheatsGDUI\obj\Debug\net7.0-windows7.0\NoCheatsGD(UI).AssemblyInfo.cs
+C:\Users\sevan\OneDrive\Рабочий стол\NoCheatsGDUI\obj\Debug\net7.0-windows7.0\NoCheatsGD(UI).csproj.CoreCompileInputs.cache
+C:\Users\sevan\OneDrive\Рабочий стол\NoCheatsGDUI\obj\Debug\net7.0-windows7.0\NoCheatsGD(UI).csproj.CopyComplete
+C:\Users\sevan\OneDrive\Рабочий стол\NoCheatsGDUI\obj\Debug\net7.0-windows7.0\NoCheatsGD(UI).genruntimeconfig.cache
+C:\Users\sevan\OneDrive\Рабочий стол\NoCheatsGDUI\obj\Debug\net7.0-windows7.0\ref\NoCheatsGD(UI).dll

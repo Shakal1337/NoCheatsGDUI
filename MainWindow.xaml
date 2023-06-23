@@ -144,7 +144,7 @@
                 BorderBrush="{x:Null}" 
                 Foreground="{x:Null}" 
                 BorderThickness="1" 
-                Click="gdbotoffon" MouseEnter="gdbotonEnter">
+                Click="gdbotoffon">
             <Button.Background>
                 <ImageBrush x:Name="im" ImageSource="/Resources/button gdbot off.png"/>
             </Button.Background>
@@ -601,6 +601,7 @@
                 <ImageBrush ImageSource="/Resources/back.png"/>
             </Rectangle.Fill>
         </Rectangle>
+        <Button Content="Button" HorizontalAlignment="Left" Height="59" Margin="91,247,0,0" VerticalAlignment="Top" Width="91" Click="Button_Click"/>
 
     </Grid>
 </Window>

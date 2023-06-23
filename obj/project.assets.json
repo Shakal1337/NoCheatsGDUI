@@ -53,23 +53,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vsevolodnegodyaev\\.nuget\\packages\\": {},
+    "C:\\Users\\sevan\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vsevolodnegodyaev\\Desktop\\NoCheatsGDUI\\NoCheatsGD(UI).csproj",
+      "projectUniqueName": "C:\\Users\\sevan\\OneDrive\\Рабочий стол\\NoCheatsGDUI\\NoCheatsGD(UI).csproj",
       "projectName": "NoCheatsGD(UI)",
-      "projectPath": "C:\\Users\\vsevolodnegodyaev\\Desktop\\NoCheatsGDUI\\NoCheatsGD(UI).csproj",
-      "packagesPath": "C:\\Users\\vsevolodnegodyaev\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vsevolodnegodyaev\\Desktop\\NoCheatsGDUI\\obj\\",
+      "projectPath": "C:\\Users\\sevan\\OneDrive\\Рабочий стол\\NoCheatsGDUI\\NoCheatsGD(UI).csproj",
+      "packagesPath": "C:\\Users\\sevan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sevan\\OneDrive\\Рабочий стол\\NoCheatsGDUI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\vsevolodnegodyaev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sevan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -120,7 +120,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }

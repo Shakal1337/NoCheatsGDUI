@@ -171,5 +171,18 @@ namespace NoCheatsGD_UI_
             debug db = new debug();
             db.Show();
         }
+
+        private void gdbotname_Click(object sender, RoutedEventArgs e)
+        {
+            Nullable<bool> gdbotnm = _dlg.ShowDialog();
+            string gdbotname = _dlg.FileName;
+            if (gdbotnm != null) 
+            {
+                _ = gdbotname;
+                Settings.Default.GDBotName = gdbotname;
+                Settings.Default.Save();
+            }
+
+        }
     }
 }

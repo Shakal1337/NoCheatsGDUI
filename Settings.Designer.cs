@@ -148,5 +148,17 @@ namespace NoCheatsGD_UI_ {
                 this["DebugMode"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string GDBotName {
+            get {
+                return ((string)(this["GDBotName"]));
+            }
+            set {
+                this["GDBotName"] = value;
+            }
+        }
     }
 }
