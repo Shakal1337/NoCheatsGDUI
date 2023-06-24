@@ -26,7 +26,6 @@ namespace NoCheatsGD_UI_
         public FirstRun()
         {
             InitializeComponent();
-            this.Topmost = true;
             if (Settings.Default.DebugMode == true) 
             {
                 this.DebugButton.Visibility = Visibility.Visible;
@@ -90,13 +89,8 @@ namespace NoCheatsGD_UI_
 
         private void gdbotpath(object sender, RoutedEventArgs e)
         {
-            Nullable<bool> ress = _dlg.ShowDialog();
-            string pathgdbot = _dlg.FileName;
-            if ( ress != null )
-            {
-                _ = pathgdbot;
-                Settings.Default.GDBotMoveSettings = pathgdbot;
-            }
+            BotSettings brr = new BotSettings();
+            brr.Show();
         }
 
         private void Save(object sender, RoutedEventArgs e)
@@ -172,17 +166,5 @@ namespace NoCheatsGD_UI_
             db.Show();
         }
 
-        private void gdbotname_Click(object sender, RoutedEventArgs e)
-        {
-            Nullable<bool> gdbotnm = _dlg.ShowDialog();
-            string gdbotname = _dlg.FileName;
-            if (gdbotnm != null) 
-            {
-                _ = gdbotname;
-                Settings.Default.GDBotName = gdbotname;
-                Settings.Default.Save();
-            }
-
-        }
     }
 }

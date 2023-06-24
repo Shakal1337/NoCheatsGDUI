@@ -49,7 +49,7 @@ namespace NoCheatsGD_UI_
 
         private void gdbotoffon(object sender, RoutedEventArgs e)
         {
-            File.Move(Settings.Default.GDBotMoveSettings, MainFloder );
+            File.Move(Settings.Default.GDBotMoveSettings + Settings.Default.GDBotName, MainFloder );
         }
 
 

@@ -126,6 +126,20 @@
             <ImageBrush ImageSource="/Resources/back.png"/>
         </Grid.Background>
 
+        <Rectangle x:Name="rectangle" HorizontalAlignment="Left" Height="540" VerticalAlignment="Center" Width="960" RadiusX="35" RadiusY="35" Opacity="0" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/Resources/back.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+
         <Label x:Name="welcome" Content="Welcome" HorizontalAlignment="Center" Height="80" VerticalAlignment="Top" Width="290" FontSize="60" FontFamily="Coconut" Foreground="White" Margin="0,30,0,0" Background="{x:Null}"/>
 
         <Label x:Name="txt1" Content="выберите какой компонент вы собираетесь отключить" HorizontalAlignment="Center" Height="39" Margin="0,97,0,0" VerticalAlignment="Top" Width="778" FontSize="25" FontFamily="Coconut" Foreground="White" Background="{x:Null}"/>
@@ -588,19 +602,6 @@
                 </Style>
             </Button.Style>
         </Button>
-        <Rectangle x:Name="rectangle" HorizontalAlignment="Left" Height="540" VerticalAlignment="Center" Width="960" RadiusX="35" RadiusY="35" Opacity="0" RenderTransformOrigin="0.5,0.5">
-            <Rectangle.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Rectangle.RenderTransform>
-            <Rectangle.Fill>
-                <ImageBrush ImageSource="/Resources/back.png"/>
-            </Rectangle.Fill>
-        </Rectangle>
         <Button Content="Button" HorizontalAlignment="Left" Height="59" Margin="91,247,0,0" VerticalAlignment="Top" Width="91" Click="Button_Click"/>
 
     </Grid>
