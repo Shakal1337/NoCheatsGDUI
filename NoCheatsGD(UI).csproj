@@ -6,6 +6,7 @@
     <RootNamespace>NoCheatsGD_UI_</RootNamespace>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+	<UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,6 +18,7 @@
 
   <ItemGroup>
     <None Remove="back.png" />
+    <None Remove="BetterFolderBrowser.dll" />
     <None Remove="buttonback.png" />
     <None Remove="gdhm on button.png" />
     <None Remove="github-mark.png" />
@@ -44,7 +46,26 @@
   </ItemGroup>
 
   <ItemGroup>
+    <COMReference Include="{215d64d2-031c-33c7-96e3-61794cd1ee61}">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>4</VersionMinor>
+      <VersionMajor>2</VersionMajor>
+      <Guid>215d64d2-031c-33c7-96e3-61794cd1ee61</Guid>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="BetterFolderBrowser.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.39" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="BetterFolderBrowser">
+      <HintPath>BetterFolderBrowser.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>

@@ -201,7 +201,7 @@
                 Width="416" BorderBrush="{x:Null}" 
                 Foreground="{x:Null}"
                 BorderThickness="1"
-                Visibility="Hidden">
+                Visibility="Hidden" Opacity="100" Click="gdboton_clck">
             <Button.Background>
                 <ImageBrush ImageSource="/Resources/button gdbot on.png"/>
             </Button.Background>

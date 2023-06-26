@@ -22,9 +22,10 @@ namespace NoCheatsGD_UI_
     /// </summary>
     public partial class MainWindow : Window
     {
-        string MainFloder = Settings.Default.MainFloder;
+        string MainFloder = Settings.Default.MainFloderResalut;
         public MainWindow()
         {
+         
             bool MainDirectorySearch = File.Exists(@"C:\ProgramData\InS\NoCheatsGD(UI)\result");
             
             //InitializeComponent();
@@ -44,14 +45,50 @@ namespace NoCheatsGD_UI_
                 InitializeComponent();
             }
 
+            if (Settings.Default.GdBotIsTouch == false)
+            {
+                gdboton.Visibility = Visibility.Hidden;
+                gdbotoff.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                gdboton.Visibility = Visibility.Visible;
+                gdbotoff.Visibility = Visibility.Hidden;
+            }
+
+
+
+            if (string.IsNullOrEmpty(Settings.Default.GDHMMoveSettingsByPass)) 
+            {
+                check.Visibility = Visibility.Hidden;
+                uncheked.Visibility = Visibility.Visible;
+            }
+
+
+
 
         }
 
         private void gdbotoffon(object sender, RoutedEventArgs e)
         {
-            File.Move(Settings.Default.GDBotMoveSettings + Settings.Default.GDBotName, MainFloder );
+            File.Move(Settings.Default.GDBotMoveSettings + @"\" + Settings.Default.GDBotName, MainFloder + @"\" + Settings.Default.GDBotName , overwrite:false );
+            Settings.Default.GdBotIsTouch = true;
+            Settings.Default.Save();
+
+            gdboton.Visibility = Visibility.Visible;
+            gdbotoff.Visibility = Visibility.Hidden;
         }
 
+        private void gdboton_clck(object sender, RoutedEventArgs e)
+        {
+            File.Move(MainFloder + @"\" + Settings.Default.GDBotName, Settings.Default.GDBotMoveSettings + @"\" + Settings.Default.GDBotName, overwrite:false);
+            Settings.Default.GdBotIsTouch = false;
+            Settings.Default.Save();
+
+            gdboton.Visibility = Visibility.Hidden;
+            gdbotoff.Visibility = Visibility.Visible;
+
+        }
 
 
 
@@ -79,8 +116,10 @@ namespace NoCheatsGD_UI_
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Settings.Default.FirstRun = true;
-            Settings.Default.Save();
+            //Settings.Default.FirstRun = true;
+            //Settings.Default.Save();
+            MessageBox.Show($"{Settings.Default.GdBotIsTouch}");
         }
+
     }
 }

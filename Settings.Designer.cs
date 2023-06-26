@@ -35,9 +35,9 @@ namespace NoCheatsGD_UI_ {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("C:\\ProgramData\\InS\\NoCheatsGD(UI)\\result")]
-        public string MainFloderResalutFloder {
+        public string MainFloderResalut {
             get {
-                return ((string)(this["MainFloderResalutFloder"]));
+                return ((string)(this["MainFloderResalut"]));
             }
         }
         
@@ -158,6 +158,30 @@ namespace NoCheatsGD_UI_ {
             }
             set {
                 this["GDBotName"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool GdBotIsTouch {
+            get {
+                return ((bool)(this["GdBotIsTouch"]));
+            }
+            set {
+                this["GdBotIsTouch"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string GDHMIsTouch {
+            get {
+                return ((string)(this["GDHMIsTouch"]));
+            }
+            set {
+                this["GDHMIsTouch"] = value;
             }
         }
     }

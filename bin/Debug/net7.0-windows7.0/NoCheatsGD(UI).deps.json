@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v7.0": {
       "NoCheatsGD(UI)/1.0.0": {
         "dependencies": {
-          "Microsoft.Xaml.Behaviors.Wpf": "1.1.39"
+          "Microsoft.Xaml.Behaviors.Wpf": "1.1.39",
+          "BetterFolderBrowser": "1.0.0.0"
         },
         "runtime": {
           "NoCheatsGD(UI).dll": {}
@@ -19,6 +20,14 @@
           "lib/net5.0-windows7.0/Microsoft.Xaml.Behaviors.dll": {
             "assemblyVersion": "1.1.0.0",
             "fileVersion": "1.1.39.4716"
+          }
+        }
+      },
+      "BetterFolderBrowser/1.0.0.0": {
+        "runtime": {
+          "BetterFolderBrowser.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       }
@@ -36,6 +45,11 @@
       "sha512": "sha512-8PZKqw9QOcu42xk8puY4P1+EXHL9YGOR9b7qhaYx5cILHul456H073tj99vyPcCt0W0781T9RwHqkx507ZyUpQ==",
       "path": "microsoft.xaml.behaviors.wpf/1.1.39",
       "hashPath": "microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
+    },
+    "BetterFolderBrowser/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

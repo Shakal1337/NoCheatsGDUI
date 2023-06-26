@@ -57,7 +57,7 @@ namespace NoCheatsGD_UI_
             MessageBox.Show
                 (
                 $"Main floder: {Settings.Default.MainFloder}" +
-                $"\nPath to mods: {Settings.Default.MainFloderResalutFloder}" +
+                $"\nPath to mods: {Settings.Default.MainFloderResalut}" +
                 $"\npath to gdbot: {Settings.Default.GDBotMoveSettings}" +
                 $"\npath to gdhm bypass: {Settings.Default.GDHMMoveSettingsByPass}" +
                 $"\npath to gdhm player: {Settings.Default.GDHMMoveSettingsPlayer}" +
@@ -75,7 +75,7 @@ namespace NoCheatsGD_UI_
             MessageBox.Show
                 (
                 $"Main floder: {Settings.Default.MainFloder}" +
-                $"\nPath to mods: {Settings.Default.MainFloderResalutFloder}" +
+                $"\nPath to mods: {Settings.Default.MainFloderResalut}" +
                 $"\npath to gdbot: {Settings.Default.GDBotMoveSettings}" +
                 $"\npath to gdhm bypass: {Settings.Default.GDHMMoveSettingsByPass}" +
                 $"\npath to gdhm player: {Settings.Default.GDHMMoveSettingsPlayer}" +
