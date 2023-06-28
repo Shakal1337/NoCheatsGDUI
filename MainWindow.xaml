@@ -88,7 +88,7 @@
                 <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="00:00:01.9000000" Value="1"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="settings" Storyboard.TargetProperty="(UIElement.Opacity)">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="configset" Storyboard.TargetProperty="(UIElement.Opacity)">
                 <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="00:00:01.9000000" Value="1"/>
             </DoubleAnimationUsingKeyFrames>
@@ -233,7 +233,6 @@
                 </Style>
             </Button.Style>
         </Button>
-
         <Button x:Name="gdhmoff" 
                 Content=""
                 HorizontalAlignment="Left" 
@@ -243,7 +242,7 @@
                 Width="328" 
                 BorderBrush="{x:Null}" 
                 Foreground="{x:Null}" 
-                BorderThickness="1" >
+                BorderThickness="1" Click="gdhmoff_clck" >
             <Button.Background>
                 <ImageBrush ImageSource="/Resources/gdhm off button.png"/>
             </Button.Background>
@@ -276,6 +275,7 @@
             </Button.Style>
         </Button>
 
+
         <Button x:Name="gdhmon" 
                 Content="" 
                 HorizontalAlignment="Left" 
@@ -286,7 +286,7 @@
                 BorderBrush="{x:Null}"
                 Foreground="{x:Null}" 
                 BorderThickness="1"
-                Visibility="Hidden">
+                Visibility="Hidden" Click="gdhmon_clck">
             <Button.Background>
                 <ImageBrush ImageSource="/gdhm on button.png"/>
             </Button.Background>
@@ -318,6 +318,8 @@
                 </Style>
             </Button.Style>
         </Button>
+
+
 
         <Button x:Name="other"
                 Content="" 
@@ -481,7 +483,7 @@
             </Button.Style>
         </Button>
 
-        <Button x:Name="settings" 
+        <Button x:Name="configset" 
                 HorizontalAlignment="Left"
                 Height="72" 
                 Margin="519,439,0,0"

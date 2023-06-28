@@ -175,10 +175,10 @@ namespace NoCheatsGD_UI_ {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string GDHMIsTouch {
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool GDHMIsTouch {
             get {
-                return ((string)(this["GDHMIsTouch"]));
+                return ((bool)(this["GDHMIsTouch"]));
             }
             set {
                 this["GDHMIsTouch"] = value;

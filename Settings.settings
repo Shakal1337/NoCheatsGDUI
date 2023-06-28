@@ -41,8 +41,8 @@
     <Setting Name="GdBotIsTouch" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="GDHMIsTouch" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+    <Setting Name="GDHMIsTouch" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
     </Setting>
   </Settings>
 </SettingsFile>
