@@ -142,3 +142,5 @@ C:\Users\sevan\OneDrive\Рабочий стол\NoCheatsGDUI\obj\Debug\net7.0-wi
 C:\Users\sevan\OneDrive\Рабочий стол\NoCheatsGDUI\obj\Debug\net7.0-windows7.0\BotSettings.baml
 C:\Users\sevan\OneDrive\Рабочий стол\NoCheatsGDUI\bin\Debug\net7.0-windows7.0\BetterFolderBrowser.dll
 C:\Users\sevan\OneDrive\Рабочий стол\NoCheatsGDUI\obj\Debug\net7.0-windows7.0\NoCheatsGD(UI).csproj.ResolveComReference.cache
+C:\Users\sevan\OneDrive\Рабочий стол\NoCheatsGDUI\obj\Debug\net7.0-windows7.0\OtherChoice.g.cs
+C:\Users\sevan\OneDrive\Рабочий стол\NoCheatsGDUI\obj\Debug\net7.0-windows7.0\OtherChoice.baml

@@ -329,7 +329,7 @@
                 VerticalAlignment="Top" 
                 Width="95" 
                 Foreground="{x:Null}" 
-                BorderBrush="{x:Null}">
+                BorderBrush="{x:Null}" Click="oterchoice_show">
             <Button.Background>
                 <ImageBrush ImageSource="/Resources/othetbutt.png"/>
             </Button.Background>
@@ -450,7 +450,7 @@
                 VerticalAlignment="Top" 
                 Width="72"
                 Foreground="{x:Null}"
-                BorderBrush="{x:Null}">
+                BorderBrush="{x:Null}" Click="githublink_clck">
             <Button.Background>
                 <ImageBrush ImageSource="/github-mark.png"/>
             </Button.Background>
