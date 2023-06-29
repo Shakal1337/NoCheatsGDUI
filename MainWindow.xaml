@@ -372,7 +372,7 @@
                 BorderBrush="{x:Null}" 
                 FontFamily="Coconut" 
                 Foreground="White" 
-                Background="{x:Null}">
+                Background="{x:Null}" Click="helpshow_clck">
             <Button.Style>
                 <Style TargetType="{x:Type Button}">
                     <Setter Property="Template">
@@ -410,7 +410,7 @@
                     VerticalAlignment="Top" 
                     Width="72"
                     Foreground="{x:Null}" 
-                    BorderBrush="{x:Null}">
+                    BorderBrush="{x:Null}" Click="info_clck">
             <Button.Background>
                 <ImageBrush ImageSource="/info-button.png"/>
             </Button.Background>

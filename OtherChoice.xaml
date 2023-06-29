@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NoCheatsGD_UI_"
         mc:Ignorable="d"
-        Title="OtherChoice" Height="350" Width="300">
+        Title="Выбирете кампонент для отключения" Height="350" Width="300" ResizeMode="NoResize">
     <Grid Background="#FF0C0C0C">
         <CheckBox Content="ByPass" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Foreground="White" Checked="bypassoff" Unchecked="bypasson"/>
         <CheckBox Content="Core" HorizontalAlignment="Left" Margin="10,34,0,0" VerticalAlignment="Top" Foreground="White" Checked="coreoff" Unchecked="coreon"/>

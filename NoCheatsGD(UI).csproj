@@ -22,8 +22,10 @@
     <None Remove="buttonback.png" />
     <None Remove="gdhm on button.png" />
     <None Remove="github-mark.png" />
+    <None Remove="help-eng.txt" />
     <None Remove="IMG_2881.JPG" />
     <None Remove="info-button.png" />
+    <None Remove="Resources\back-help.png" />
     <None Remove="Resources\back.png" />
     <None Remove="Resources\bottom.png" />
     <None Remove="Resources\button gdbot off.png" />
@@ -36,10 +38,14 @@
     <None Remove="Resources\gdhm on button.png" />
     <None Remove="Resources\github-mark.png" />
     <None Remove="Resources\github-mark.svg" />
+    <None Remove="Resources\help-text.png" />
     <None Remove="Resources\Help.png" />
     <None Remove="Resources\info-button.png" />
     <None Remove="Resources\info-button.svg" />
     <None Remove="Resources\othetbutt.png" />
+    <None Remove="Resources\screanshot-1.png" />
+    <None Remove="Resources\screanshot-2.png" />
+    <None Remove="Resources\screanshot-3.png" />
     <None Remove="Resources\Setting-Icon.png" />
     <None Remove="Resources\Setting-Icon.svg" />
     <None Remove="Setting-Icon.png" />
@@ -74,6 +80,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Update="Source.cs">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
@@ -89,6 +98,9 @@
     </Resource>
     <Resource Include="github-mark.png" />
     <Resource Include="info-button.png" />
+    <Resource Include="Resources\back-help.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resources\back.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
@@ -122,6 +134,9 @@
     <Resource Include="Resources\github-mark.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Resources\help-text.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resources\Help.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
@@ -131,10 +146,22 @@
     <Resource Include="Resources\othetbutt.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Resources\screanshot-1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\screanshot-2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\screanshot-3.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resources\Setting-Icon.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Setting-Icon.png" />
+    <Content Include="help-eng.txt">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

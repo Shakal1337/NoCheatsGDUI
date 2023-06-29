@@ -257,5 +257,32 @@ namespace NoCheatsGD_UI_
             OtherChoice ch = new OtherChoice();
             ch.Show();
         }
+
+        private void info_clck(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(
+                "NoChetsGD UI 1.0" +
+                "\nby shakal" +
+                "\nInS 2020-2023" +
+                "\nContacts:" +
+                "\nEmail: InS.Network.Help@outlook.com" +
+                "\nTelegram: @shakalofff" +
+                "\n" +
+                $"\nMainDirectory:{src.MainFloder}" +
+                $"\nFirst run: {Settings.Default.FirstRun}" +
+                $"\nDebug: {Settings.Default.DebugMode}" +
+                "\n" +
+                "\nThank you for using <3",
+                "info",
+                MessageBoxButton.OK,
+                MessageBoxImage.Information
+                );
+        }
+
+        private void helpshow_clck(object sender, RoutedEventArgs e)
+        {
+            Help_window hw = new Help_window();
+            hw.Show();
+        }
     }
 }

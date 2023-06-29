@@ -16,6 +16,9 @@
     <Compile Update="FirstRun.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Help-window.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="OtherChoice.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -28,6 +31,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="FirstRun.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Help-window.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
