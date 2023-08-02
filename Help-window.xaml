@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NoCheatsGD_UI_"
         mc:Ignorable="d"
-        Title="Help_window" Height="395" Width="780" ResizeMode="NoResize">
+        Title="Help
+" Height="395" Width="780" ResizeMode="NoResize">
     <Grid Height="380">
         <Grid.Background>
             <ImageBrush ImageSource="/Resources/back-help.png"/>

@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NoCheatsGD_UI_"
         mc:Ignorable="d"
-        Title="BotSettings" Height="240" Width="320" ResizeMode="NoResize">
+        Title="Настройка" Height="240" Width="320" ResizeMode="NoResize">
     <Grid Width="320" Height="240" Background="#FF0C0C0C">
         <Button Content="Путь до бота" HorizontalAlignment="Left" Height="70" Margin="19,28,0,0" VerticalAlignment="Top" Width="275" BorderBrush="{x:Null}" Background="White" FontSize="36" Click="Button_Click"/>
-        <TextBox x:Name="BotName" HorizontalAlignment="Left" Margin="19,110,0,0" TextWrapping="Wrap" Text="Имя бота..." VerticalAlignment="Top" Width="275" Height="41" FontSize="24" Foreground="#FF7E7E7E" TextChanged="GdBotWrite"/>
+        <TextBox x:Name="BotName" HorizontalAlignment="Left" Margin="19,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="275" Height="41" FontSize="24" Foreground="#FF7E7E7E" TextChanged="GdBotWrite" UndoLimit="25" Cursor="Wait" Text="YourBot.dll"/>
         <Button Content="Сохранить" HorizontalAlignment="Center" Height="41" Margin="0,169,0,0" VerticalAlignment="Top" Width="275" BorderBrush="{x:Null}" Background="White" FontSize="18" Click="Button_Click_1" AutomationProperties.IsRequiredForForm="True"/>
 
     </Grid>

@@ -38,6 +38,7 @@
     <None Remove="Resources\gdhm on button.png" />
     <None Remove="Resources\github-mark.png" />
     <None Remove="Resources\github-mark.svg" />
+    <None Remove="Resources\GitHub_Logo.png" />
     <None Remove="Resources\help-text.png" />
     <None Remove="Resources\Help.png" />
     <None Remove="Resources\info-button.png" />
@@ -132,6 +133,9 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\github-mark.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\GitHub_Logo.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\help-text.png">

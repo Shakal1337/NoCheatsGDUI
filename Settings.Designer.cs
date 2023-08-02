@@ -184,5 +184,17 @@ namespace NoCheatsGD_UI_ {
                 this["GDHMIsTouch"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool AnyElementSelect {
+            get {
+                return ((bool)(this["AnyElementSelect"]));
+            }
+            set {
+                this["AnyElementSelect"] = value;
+            }
+        }
     }
 }

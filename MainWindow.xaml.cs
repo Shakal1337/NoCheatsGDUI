@@ -24,13 +24,13 @@ namespace NoCheatsGD_UI_
     public partial class MainWindow : Window
     {
         Source src = new Source();
-        
+
 
 
 
         public MainWindow()
         {
-         
+
             bool MainDirectorySearch = File.Exists(@"C:\ProgramData\InS\NoCheatsGD(UI)\result");
 
 
@@ -45,7 +45,7 @@ namespace NoCheatsGD_UI_
             {
                 FirstRun firstRun = new FirstRun();
                 firstRun.Show();
-                
+
             }
             else
             {
@@ -66,11 +66,11 @@ namespace NoCheatsGD_UI_
                     gdbotoff.Visibility = Visibility.Hidden;
                 }
 
-                if (Settings.Default.GDHMIsTouch == false) 
+                if (Settings.Default.GDHMIsTouch == false)
                 {
                     gdhmon.Visibility = Visibility.Hidden;
                     gdhmoff.Visibility = Visibility.Visible;
-                
+
                 }
                 else
                 {
@@ -80,15 +80,22 @@ namespace NoCheatsGD_UI_
 
             }
 
-           
+
+            //if (Settings.Default.AnyElementSelect == true)
+            //{
+            //    gdboton.Visibility = Visibility.Hidden;
+            //    gdbotoff.Visibility = Visibility.Visible;
+            //}
+           //therd
 
 
 
-            if (string.IsNullOrEmpty(Settings.Default.GDHMMoveSettingsByPass)) 
-            {
-                check.Visibility = Visibility.Hidden;
-                uncheked.Visibility = Visibility.Visible;
-            }
+
+            //if (string.IsNullOrEmpty(Settings.Default.GDHMMoveSettingsByPass)) 
+            //{
+            //    check.Visibility = Visibility.Hidden;
+            //    uncheked.Visibility = Visibility.Visible;
+            //}
         }
 
         private void gdbotoffon(object sender, RoutedEventArgs e)
@@ -283,6 +290,24 @@ namespace NoCheatsGD_UI_
         {
             Help_window hw = new Help_window();
             hw.Show();
+        }
+
+        private void configopenwindow_clck(object sender, RoutedEventArgs e)
+        {
+            SettingsWindw cfg = new SettingsWindw();
+            cfg.Show();
+
+        }
+
+        private void debug_show_butt(object sender, MouseWheelEventArgs e)
+        {
+            debug_.Visibility = Visibility.Visible;
+        }
+
+        private void debug_show_window(object sender, RoutedEventArgs e)
+        {
+            debug db = new debug();
+            db.Show();  
         }
     }
 }

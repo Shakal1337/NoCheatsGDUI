@@ -118,8 +118,8 @@
 
     <Grid x:Name="grid">
         <b:Interaction.Triggers>
-            <b:EventTrigger EventName="Loaded">
-                <b:ControlStoryboardAction ControlStoryboardOption="Play" Storyboard="{Binding Mode=OneWay, Source={StaticResource startupani}}"/>
+            <b:EventTrigger x:Name="triggeranistart" EventName="Loaded">
+                <b:ControlStoryboardAction x:Name="csa_name" ControlStoryboardOption="Play" Storyboard="{Binding Mode=OneWay, Source={StaticResource startupani}}"/>
             </b:EventTrigger>
         </b:Interaction.Triggers>
         <Grid.Background>
@@ -140,7 +140,7 @@
             </Rectangle.Fill>
         </Rectangle>
 
-        <Label x:Name="welcome" Content="Welcome" HorizontalAlignment="Center" Height="80" VerticalAlignment="Top" Width="290" FontSize="60" FontFamily="Coconut" Foreground="White" Margin="0,30,0,0" Background="{x:Null}"/>
+        <Label x:Name="welcome" Content="Welcome" HorizontalAlignment="Center" Height="80" VerticalAlignment="Top" Width="290" FontSize="60" FontFamily="Coconut" Foreground="White" Margin="0,30,0,0" Background="{x:Null}" MouseWheel="debug_show_butt"/>
 
         <Label x:Name="txt1" Content="выберите какой компонент вы собираетесь отключить" HorizontalAlignment="Center" Height="39" Margin="0,97,0,0" VerticalAlignment="Top" Width="778" FontSize="25" FontFamily="Coconut" Foreground="White" Background="{x:Null}"/>
 
@@ -490,7 +490,7 @@
                 VerticalAlignment="Top"
                 Width="72"
                 Foreground="{x:Null}"
-                BorderBrush="{x:Null}">
+                BorderBrush="{x:Null}" Click="configopenwindow_clck">
             <Button.Background>
                 <ImageBrush ImageSource="/Setting-Icon.png"/>
             </Button.Background>
@@ -604,7 +604,8 @@
                 </Style>
             </Button.Style>
         </Button>
-        <Button Content="Button" HorizontalAlignment="Left" Height="59" Margin="91,247,0,0" VerticalAlignment="Top" Width="91" Click="Button_Click"/>
+        <Button Content="Button" HorizontalAlignment="Left" Height="59" Margin="91,247,0,0" VerticalAlignment="Top" Width="91" Click="Button_Click" Visibility="Hidden"/>
+        <Button x:Name="debug_" Content="debug" HorizontalAlignment="Center" Height="24" Margin="0,410,0,0" VerticalAlignment="Top" Width="73" Visibility="Hidden" Click="debug_show_window"/>
 
     </Grid>
 </Window>

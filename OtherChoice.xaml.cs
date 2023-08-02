@@ -28,12 +28,26 @@ namespace NoCheatsGD_UI_
 
         }
 
+        public void selectelement() 
+        { 
+            Settings.Default.AnyElementSelect = true;
+            Settings.Default.Save();
+        }
+
+        public void unselectalement()
+        {
+            Settings.Default.AnyElementSelect = false;
+            Settings.Default.Save();
+        
+        }
+
         private void bypassoff(object sender, RoutedEventArgs e)
         {
             File.Move(
                 Settings.Default.GDHMMoveSettingsByPass ,
                 src.MainFloder + @"\" + src.ModeName[0]               
                );
+            selectelement();
         }
 
         private void coreoff(object sender, RoutedEventArgs e)
@@ -42,6 +56,7 @@ namespace NoCheatsGD_UI_
                 Settings.Default.GDHMMoveSettingsCore,
                 src.MainFloder + @"\" + src.ModeName[1]
                 );
+            selectelement();
         }
 
         private void globaloff(object sender, RoutedEventArgs e)
@@ -50,6 +65,7 @@ namespace NoCheatsGD_UI_
                 Settings.Default.GDHMMoveSettingsGlobal,
                 src.MainFloder + @"\" + src.ModeName[2] 
                 );
+            selectelement();
         }
 
         private void playeroff(object sender, RoutedEventArgs e)
@@ -58,6 +74,7 @@ namespace NoCheatsGD_UI_
                 Settings.Default.GDHMMoveSettingsPlayer,
                 src.MainFloder + @"\" + src.ModeName[3]
                 );
+            selectelement();
         }
 
         private void varioff(object sender, RoutedEventArgs e)
@@ -66,6 +83,7 @@ namespace NoCheatsGD_UI_
                 Settings.Default.GDHMMoveSettingsvVriables,
                 src.MainFloder + @"\" + src.ModeName[4]
                 );
+            selectelement();
         }
 
         private void creatoroff(object sender, RoutedEventArgs e)
@@ -74,6 +92,7 @@ namespace NoCheatsGD_UI_
                 Settings.Default.GDHMMoveSettingsCreator,
                 src.MainFloder + @"\" + src.ModeName[5]
                 );
+            selectelement();
         }
 
 
@@ -87,6 +106,7 @@ namespace NoCheatsGD_UI_
                 src.MainFloder + @"\" + src.ModeName[0],
                 Settings.Default.GDHMMoveSettingsByPass
                 );
+            unselectalement();
         }
 
         private void coreon(object sender, RoutedEventArgs e)
@@ -95,6 +115,7 @@ namespace NoCheatsGD_UI_
                 src.MainFloder + @"\" + src.ModeName[1],
                 Settings.Default.GDHMMoveSettingsCore
                 );
+            unselectalement();
         }
 
         private void globalon(object sender, RoutedEventArgs e)
@@ -103,6 +124,7 @@ namespace NoCheatsGD_UI_
                 src.MainFloder + @"\" + src.ModeName[2],
                 Settings.Default.GDHMMoveSettingsGlobal
                 );
+            unselectalement();
         }
 
         private void playeron(object sender, RoutedEventArgs e)
@@ -111,6 +133,7 @@ namespace NoCheatsGD_UI_
                 src.MainFloder + @"\" + src.ModeName[3],
                 Settings.Default.GDHMMoveSettingsPlayer
                 );
+            unselectalement();
         }
 
         private void varion(object sender, RoutedEventArgs e)
@@ -119,6 +142,7 @@ namespace NoCheatsGD_UI_
                 src.MainFloder + @"\" + src.ModeName[4],
                 Settings.Default.GDHMMoveSettingsvVriables
                 );
+            unselectalement();
         }
 
         private void creatoron(object sender, RoutedEventArgs e)
@@ -127,6 +151,7 @@ namespace NoCheatsGD_UI_
                 src.MainFloder + @"\" + src.ModeName[5],
                 Settings.Default.GDHMMoveSettingsCreator
                 );
+            unselectalement();
         }
     }
 }

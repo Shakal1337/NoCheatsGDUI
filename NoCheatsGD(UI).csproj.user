@@ -22,6 +22,9 @@
     <Compile Update="OtherChoice.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="SettingsWindw.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="BotSettings.xaml">
@@ -40,6 +43,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="OtherChoice.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SettingsWindw.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

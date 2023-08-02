@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NoCheatsGD_UI_"
         mc:Ignorable="d"
-        Title="debug" Height="450" Width="800">
+        Title="debug_window" Height="450" Width="800">
     <Grid>
         <CheckBox x:Name="ActiveDubug" Content="Активировать Debug Mode навсегда" HorizontalAlignment="Left" Margin="10,333,0,0" VerticalAlignment="Top" FontSize="18" Cursor="No" Checked="ActiveDebugModeFull" Unchecked="DebugModeDiactived" IsChecked="False"/>
         <TextBlock x:Name="wairnongdebug" HorizontalAlignment="Left" Margin="450,318,0,0" TextWrapping="Wrap" 
