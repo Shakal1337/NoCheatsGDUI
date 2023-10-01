@@ -86,7 +86,8 @@ namespace NoCheatsGD_UI_
             //    gdboton.Visibility = Visibility.Hidden;
             //    gdbotoff.Visibility = Visibility.Visible;
             //}
-           //therd
+           //therad
+           //archive
 
 
 
@@ -98,127 +99,187 @@ namespace NoCheatsGD_UI_
             //}
         }
 
+        #region moveing
+
         private void gdbotoffon(object sender, RoutedEventArgs e)
         {
-            File.Move(Settings.Default.GDBotMoveSettings + @"\" + Settings.Default.GDBotName, 
-                src.MainFloder + @"\" + Settings.Default.GDBotName ,
-                overwrite:false );
+            try
+            {
+                File.Move(Settings.Default.GDBotMoveSettings + @"\" + Settings.Default.GDBotName,
+                src.MainFloder + @"\" + Settings.Default.GDBotName,
+                overwrite: false);
 
-            Settings.Default.GdBotIsTouch = true;
-            Settings.Default.Save();
+                Settings.Default.GdBotIsTouch = true;
+                Settings.Default.Save();
 
-            gdboton.Visibility = Visibility.Visible;
-            gdbotoff.Visibility = Visibility.Hidden;
+                gdboton.Visibility = Visibility.Visible;
+                gdbotoff.Visibility = Visibility.Hidden;
+
+            }
+            catch (Exception a)
+            {
+
+                MessageBox.Show(
+                    "fatal error:" +
+                    $"\n{a}",
+                    "Error",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Error
+                    );
+            }
+            
         }
 
         private void gdboton_clck(object sender, RoutedEventArgs e)
         {
-            File.Move(src.MainFloder + @"\" + Settings.Default.GDBotName, 
-                Settings.Default.GDBotMoveSettings + @"\" + Settings.Default.GDBotName, 
-                overwrite:false);
+            try
+            {
+                File.Move(src.MainFloder + @"\" + Settings.Default.GDBotName,
+               Settings.Default.GDBotMoveSettings + @"\" + Settings.Default.GDBotName,
+               overwrite: false);
 
-            Settings.Default.GdBotIsTouch = false;
-            Settings.Default.Save();
+                Settings.Default.GdBotIsTouch = false;
+                Settings.Default.Save();
 
-            gdboton.Visibility = Visibility.Hidden;
-            gdbotoff.Visibility = Visibility.Visible;
+                gdboton.Visibility = Visibility.Hidden;
+                gdbotoff.Visibility = Visibility.Visible;
+            }
+            catch (Exception a)
+            {
+
+                MessageBox.Show(
+                    "fatal error:" +
+                    $"\n{a}",
+                    "Error",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Error
+                    );
+            }
 
         }
 
         private void gdhmoff_clck(object sender, RoutedEventArgs e)
         {
-            #region move
-            File.Move(
-                Settings.Default.GDHMMoveSettingsByPass ,
-                src.MainFloder + @"\" + src.ModeName[0],
-                overwrite:false
-                );
+            try
+            {
+                #region move
+                File.Move(
+                    Settings.Default.GDHMMoveSettingsByPass,
+                    src.MainFloder + @"\" + src.ModeName[0],
+                    overwrite: false
+                    );
 
-            File.Move(
-                Settings.Default.GDHMMoveSettingsCore,
-                src.MainFloder + @"\" + src.ModeName[1],
-                overwrite: false
-                );
+                File.Move(
+                    Settings.Default.GDHMMoveSettingsCore,
+                    src.MainFloder + @"\" + src.ModeName[1],
+                    overwrite: false
+                    );
 
-            File.Move(
-                Settings.Default.GDHMMoveSettingsGlobal,
-                src.MainFloder + @"\" + src.ModeName[2],
-                overwrite: false
-                );
+                File.Move(
+                    Settings.Default.GDHMMoveSettingsGlobal,
+                    src.MainFloder + @"\" + src.ModeName[2],
+                    overwrite: false
+                    );
 
-            File.Move(
-                Settings.Default.GDHMMoveSettingsPlayer,
-                src.MainFloder + @"\" + src.ModeName[3],
-                overwrite: false
-                );
+                File.Move(
+                    Settings.Default.GDHMMoveSettingsPlayer,
+                    src.MainFloder + @"\" + src.ModeName[3],
+                    overwrite: false
+                    );
 
-            File.Move(
-                Settings.Default.GDHMMoveSettingsvVriables,
-                src.MainFloder + @"\" + src.ModeName[4],
-                overwrite: false
-                );
+                File.Move(
+                    Settings.Default.GDHMMoveSettingsvVriables,
+                    src.MainFloder + @"\" + src.ModeName[4],
+                    overwrite: false
+                    );
 
-            File.Move(
-                Settings.Default.GDHMMoveSettingsCreator,
-                src.MainFloder + @"\" + src.ModeName[5],
-                overwrite: false
-                );
-            #endregion
-            Settings.Default.GDHMIsTouch = true;
-            Settings.Default.Save();
-            gdhmon.Visibility = Visibility.Visible;
-            gdhmoff.Visibility = Visibility.Hidden;
+                File.Move(
+                    Settings.Default.GDHMMoveSettingsCreator,
+                    src.MainFloder + @"\" + src.ModeName[5],
+                    overwrite: false
+                    );
+                #endregion
+                Settings.Default.GDHMIsTouch = true;
+                Settings.Default.Save();
+                gdhmon.Visibility = Visibility.Visible;
+                gdhmoff.Visibility = Visibility.Hidden;
+            }
+            catch (Exception a)
+            {
+                MessageBox.Show(
+                    "fatal error:" +
+                    $"\n{a}",
+                    "Error",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Error
+                    );
+            }            
+
             
 
         }
 
         private void gdhmon_clck(object sender, RoutedEventArgs e)
         {
-            #region move to gd directory
-            File.Move(
-                src.MainFloder + @"\" + src.ModeName[0],
-                Settings.Default.GDHMMoveSettingsByPass,
-                overwrite: false
-                );
+            try
+            {
+                #region move to gd directory
+                File.Move(
+                    src.MainFloder + @"\" + src.ModeName[0],
+                    Settings.Default.GDHMMoveSettingsByPass,
+                    overwrite: false
+                    );
 
-            File.Move(
-                src.MainFloder + @"\" + src.ModeName[1],
-                Settings.Default.GDHMMoveSettingsCore,
-                overwrite: false
-                );
+                File.Move(
+                    src.MainFloder + @"\" + src.ModeName[1],
+                    Settings.Default.GDHMMoveSettingsCore,
+                    overwrite: false
+                    );
 
-            File.Move(
-                src.MainFloder + @"\" + src.ModeName[2],
-                Settings.Default.GDHMMoveSettingsGlobal,
-                overwrite: false
-                );
+                File.Move(
+                    src.MainFloder + @"\" + src.ModeName[2],
+                    Settings.Default.GDHMMoveSettingsGlobal,
+                    overwrite: false
+                    );
 
-            File.Move(
-                src.MainFloder + @"\" + src.ModeName[3],
-                Settings.Default.GDHMMoveSettingsPlayer,
-                overwrite: false
-                );
+                File.Move(
+                    src.MainFloder + @"\" + src.ModeName[3],
+                    Settings.Default.GDHMMoveSettingsPlayer,
+                    overwrite: false
+                    );
 
-            File.Move(
-                src.MainFloder + @"\" + src.ModeName[4],
-                Settings.Default.GDHMMoveSettingsvVriables,
-                overwrite: false
-                );
+                File.Move(
+                    src.MainFloder + @"\" + src.ModeName[4],
+                    Settings.Default.GDHMMoveSettingsvVriables,
+                    overwrite: false
+                    );
 
-            File.Move(
-                 src.   MainFloder + @"\" + src.ModeName[5],
-                Settings.Default.GDHMMoveSettingsCreator,
-                overwrite: false
-                );
-            #endregion
-            Settings.Default.GDHMIsTouch = false;
-            Settings.Default.Save();
-            gdhmon.Visibility = Visibility.Hidden;
-            gdhmoff.Visibility = Visibility.Visible;
+                File.Move(
+                     src.MainFloder + @"\" + src.ModeName[5],
+                    Settings.Default.GDHMMoveSettingsCreator,
+                    overwrite: false
+                    );
+                #endregion
+                Settings.Default.GDHMIsTouch = false;
+                Settings.Default.Save();
+                gdhmon.Visibility = Visibility.Hidden;
+                gdhmoff.Visibility = Visibility.Visible;
+            }
+            catch (Exception a)
+            {
+                MessageBox.Show(
+                     "fatal error:" +
+                     $"\n{a}",
+                     "Error",
+                     MessageBoxButton.OK,
+                     MessageBoxImage.Error
+                     );
+            }
+          
         }
 
 
-
+        #endregion
 
 
 

@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("help-eng.txt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/icon.ico")]
 
 

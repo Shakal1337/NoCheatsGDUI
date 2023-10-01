@@ -1,19 +1,19 @@
 ﻿NoCheatsGD(UI)
-
+1.0
 
 winexe
 C#
 .cs
-C:\Users\1337\source\repos\NoCheatsGDUI\obj\Debug\net7.0-windows7.0\
+C:\Users\1337\NoCheatsGDUI\obj\Debug\net7.0-windows7.0\
 NoCheatsGD_UI_
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-C:\Users\1337\source\repos\NoCheatsGDUI\App.xaml
+C:\Users\1337\NoCheatsGDUI\App.xaml
 71842498496
-1-1291520844
+1103199032
 11-1320306950
-2091009746896
+209-436809764
 BotSettings.xaml;debug.xaml;FirstRun.xaml;Help-window.xaml;MainWindow.xaml;OtherChoice.xaml;SettingsWindw.xaml;
 
 False

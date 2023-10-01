@@ -42,7 +42,7 @@
 
         </Button>
         <Button Content="Заново задать пути" HorizontalAlignment="Left" Height="35" Margin="21,25,0,0" VerticalAlignment="Top" Width="136" BorderBrush="{x:Null}" Background="White" FontSize="14" Click="first_window_clck"/>
-        <Button Content="вкл/выкл аним. при запуске" HorizontalAlignment="Left" Height="36" Margin="21,74,0,0" VerticalAlignment="Top" Width="136" Background="White" BorderBrush="{x:Null}" Click="on_offAniStartup_clck" FontSize="9"/>
+        <Button Content="вкл/выкл аним. при запуске" HorizontalAlignment="Left" Height="36" Margin="21,74,0,0" VerticalAlignment="Top" Width="136" Background="White" BorderBrush="{x:Null}" FontSize="9"/>
         <Button Content="Показать основную деректрою" HorizontalAlignment="Left" Height="36" Margin="19,124,0,0" VerticalAlignment="Top" Width="138" Background="White" BorderBrush="{x:Null}" FontSize="9"/>
         <Button Content="Button" HorizontalAlignment="Left" Height="36" Margin="19,174,0,0" VerticalAlignment="Top" Width="100" Background="White" BorderBrush="{x:Null}"/>
         <Button Content="Помощь" HorizontalAlignment="Left" Height="36" Margin="19,174,0,0" VerticalAlignment="Top" Width="138" Background="White" BorderBrush="{x:Null}" FontSize="20" Click="help_show_butt"/>

@@ -1,3 +1,41 @@
+    --eng--
+    The first time you run it for the first time, a window will appear
+    you will need to
+    specify paths to the main mods and 
+    bot replay.
+ 
+    to specify the path to a mod 
+    click on one of the buttons and select
+    the appropriate .json file, mine looks like this
+    looks like this: 
+    D://Geometry Dash v2.112\.GDHM\mods\Bypass.json 
+    and so specify paths to all .json files.
+
+    To enter the path to the bot for playback. 
+    click the "Bot" button, enter the path to the bot and 
+    write the absolute name of the file 
+    (with the extension). 
+     
+
+    --rus-- 
+    При первом запуске появится окно
+    настройки вам нужно будет
+    указать пути к основным модам и 
+    bot replay.
+ 
+    чтобы указать путь к моду 
+    нажмите на одну из кнопок и выберите
+    соответствующий .json файл, у меня он
+    выглядит следующим образом: 
+    D:\Geometry Dash v2.112\.GDHM\mods\Bypass.json 
+    и так указать пути ко всем .json-файлам.
+
+    Чтобы указать путь к боту для воспроизведения 
+    нажмите кнопку "Bot", укажите путь к боту и 
+    напишите абсолютное имя файла 
+    (с расширением). 
+
+ 
     NoCheatsGDUI, disables gdhm client cheat modules
     Copyright (C) 2023 Shakal1337
 

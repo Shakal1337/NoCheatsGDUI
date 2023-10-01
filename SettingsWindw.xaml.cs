@@ -32,17 +32,17 @@ namespace NoCheatsGD_UI_
             fr.Show();
         }
 
-        private void on_offAniStartup_clck(object sender, RoutedEventArgs e)
-        {
-            MainWindow mainWindow = new MainWindow();
-            if (mainWindow.csa_name.ControlStoryboardOption == ControlStoryboardOption.Play)
-            {
-                mainWindow.csa_name.ControlStoryboardOption = ControlStoryboardOption.Stop;
-            }
+        //private void on_offAniStartup_clck(object sender, RoutedEventArgs e)
+        //{
+        //    MainWindow mainWindow = new MainWindow();
+        //    if (mainWindow.csa_name.ControlStoryboardOption == ControlStoryboardOption.Play)
+        //    {
+        //        mainWindow.csa_name.ControlStoryboardOption = ControlStoryboardOption.Stop;
+        //    }
 
-            else
-                mainWindow.csa_name.ControlStoryboardOption = ControlStoryboardOption.Play;
-        }
+        //    else
+        //        mainWindow.csa_name.ControlStoryboardOption = ControlStoryboardOption.Play;
+        //}
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {

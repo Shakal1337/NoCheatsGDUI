@@ -7,6 +7,19 @@
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
 	<UseWindowsForms>true</UseWindowsForms>
+	<StartupObject>NoCheatsGD_UI_.App</StartupObject>
+	<ApplicationIcon>Resources\icon.ico</ApplicationIcon>
+	<PlatformTarget>x64</PlatformTarget>
+	<Title>NoCheatsGDUI</Title>
+	<Authors>Shakal1337</Authors>
+	<Company>InS</Company>
+	<Copyright>InS</Copyright>
+	<PackageProjectUrl>https://github.com/Shakal1337/NoCheatsGDUI.git</PackageProjectUrl>
+	<RepositoryUrl>https://github.com/Shakal1337/NoCheatsGDUI.git</RepositoryUrl>
+	<PackageIcon>icon.png</PackageIcon>
+	<AssemblyVersion>1.0</AssemblyVersion>
+	<FileVersion>1.0</FileVersion>
+	<PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -22,7 +35,6 @@
     <None Remove="buttonback.png" />
     <None Remove="gdhm on button.png" />
     <None Remove="github-mark.png" />
-    <None Remove="help-eng.txt" />
     <None Remove="IMG_2881.JPG" />
     <None Remove="info-button.png" />
     <None Remove="Resources\back-help.png" />
@@ -41,6 +53,7 @@
     <None Remove="Resources\GitHub_Logo.png" />
     <None Remove="Resources\help-text.png" />
     <None Remove="Resources\Help.png" />
+    <None Remove="Resources\icon.ico" />
     <None Remove="Resources\info-button.png" />
     <None Remove="Resources\info-button.svg" />
     <None Remove="Resources\othetbutt.png" />
@@ -59,6 +72,12 @@
       <VersionMajor>2</VersionMajor>
       <Guid>215d64d2-031c-33c7-96e3-61794cd1ee61</Guid>
     </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\icon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
@@ -87,6 +106,28 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="git">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="LICENSE">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="Redist\Coconut-Bold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Redist\Coconut-Medium.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Redist\Coconut-Regular.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -144,6 +185,9 @@
     <Resource Include="Resources\Help.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Resources\icon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resources\info-button.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
@@ -163,9 +207,6 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Setting-Icon.png" />
-    <Content Include="help-eng.txt">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
 
 </Project>
